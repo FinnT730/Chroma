@@ -31,8 +31,9 @@ void _start(void) {
 
     int color = 0;
 
-    for(;;) {
+    FreeFrame(0);
 
+    for(;;) {
         if(i > 600) {
             i = 0;
             j++;
@@ -40,7 +41,11 @@ void _start(void) {
         }
         if(j > 300) {
             j = 0;
-            color += 5;
+            // color += 5;
+        }
+
+        if(color > 1500) {
+            // color = color % 1510;
         }
 
         i++;
@@ -49,7 +54,7 @@ void _start(void) {
 
         // UpdateKeyboard('!');
 
-
+        FreeFrame(0);
     }
     
 }
