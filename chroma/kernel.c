@@ -46,7 +46,7 @@ void _start(void) {
         }
 
         i++;
-        DrawPixel(i,150 + j - (i / 6),0x000fffcff & color);
+        DrawPixel(i,150 + j - (i / 6),0x000fffcff & (color & (j - i)));
 
 
         // UpdateKeyboard('!');
