@@ -30,9 +30,6 @@ void _start(void) {
     int j = 0;
 
     int color = 0;
-
-    FreeFrame(0);
-
     for(;;) {
         if(i > 600) {
             i = 0;
@@ -49,12 +46,10 @@ void _start(void) {
         }
 
         i++;
-        DrawPixel(i,150 + j - (i / 6),0x000ffffff & color);
+        DrawPixel(i,150 + j - (i / 6),0x000fffcff & color);
 
 
         // UpdateKeyboard('!');
-
-        FreeFrame(0);
     }
     
 }
