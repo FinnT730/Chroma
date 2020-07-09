@@ -25,7 +25,31 @@ void _start(void) {
 
     InitPaging();
 
+    int i = 0;
 
-    for(;;) { }
+    int j = 0;
+
+    int color = 0;
+
+    for(;;) {
+
+        if(i > 600) {
+            i = 0;
+            j++;
+            color += 1;
+        }
+        if(j > 300) {
+            j = 0;
+            color += 5;
+        }
+
+        i++;
+        DrawPixel(i,150 + j - (i / 6),0x000ffffff & color);
+
+
+        // UpdateKeyboard('!');
+
+
+    }
     
 }
