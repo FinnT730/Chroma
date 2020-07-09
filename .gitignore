@@ -39,3 +39,4 @@ CMakeFiles/kernel.elf.dir/chroma/system/memory/paging.c.obj
 CMakeFiles/kernel.elf.dir/chroma/system/memory/physmem.c.obj
 CMakeFiles/kernel.elf.dir/chroma/video/draw.c.obj
 CMakeFiles/kernel.elf.dir/chroma/video/print.c.obj
+Makefile
