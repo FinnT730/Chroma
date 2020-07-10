@@ -115,7 +115,9 @@ void ISR_Error_Common(INTERRUPT_FRAME* Frame, size_t ErrorCode, size_t Exception
 		
 		SerialPrintf("ISR Error %d raised, EC %d!\r\n", Exception, ErrorCode);
 		SerialPrintf("%s exception!\r\n", ExceptionStrings[Exception]);
-		while(true) {}
+		
+		// while(true) {}
+
 		//serialPrint(ExceptionStrings[Exception]);
 		//serialPrintf(" Exception. Context given: %d\r\n", Frame->ErrorCode);
 		//printf("%s exception. Context: %x", ExceptionStrings[Exception], Frame->ErrorCode);
@@ -395,6 +397,9 @@ __attribute__((interrupt)) void ISR30Handler(INTERRUPT_FRAME* Frame, size_t Erro
 __attribute__((interrupt)) void ISR31Handler(INTERRUPT_FRAME* Frame) {
 	ISR_Common(Frame, 31);
 }
+__attribute__((interrupt)) void ISR32Handler(INTERRUPT_FRAME* Frame) {
+	ISR_Common(Frame, 32);
+}
 
 __attribute__((interrupt)) void ReservedISRHandler(INTERRUPT_FRAME* Frame) {
 	ISR_Common(Frame, 33); // if < 32, isn't handled.
@@ -407,6 +412,8 @@ __attribute__((interrupt)) void IRQ0Handler(INTERRUPT_FRAME* Frame) {
 }
 __attribute__((interrupt)) void IRQ1Handler(INTERRUPT_FRAME* Frame) {
 	IRQ_Common(Frame, 1); // Keyboard handler
+	
+	SerialPrintf("%d DID run\n", Frame);
 }
 __attribute__((interrupt)) void IRQ2Handler(INTERRUPT_FRAME* Frame) {
 	IRQ_Common(Frame, 2);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 CMakeFiles/
 
@@ -6,3 +7,47 @@ cmake_install.cmake
 Makefile
 
 SETUP FOR FINNT730.txt
+=======
+SETUP FOR FINNT730.txt
+cmake_install.cmake
+CMakeCache.txt
+font.o
+kernel.elf
+CMakeFiles/cmake.check_cache
+CMakeFiles/CMakeDirectoryInformation.cmake
+CMakeFiles/CMakeError.log
+CMakeFiles/CMakeOutput.log
+CMakeFiles/Makefile.cmake
+CMakeFiles/Makefile2
+CMakeFiles/progress.marks
+CMakeFiles/TargetDirectories.txt
+CMakeFiles/3.17.3/CMakeCCompiler.cmake
+CMakeFiles/3.17.3/CMakeCXXCompiler.cmake
+CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin
+CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin
+CMakeFiles/3.17.3/CMakeSystem.cmake
+CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c
+CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.o
+CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.o
+CMakeFiles/kernel.elf.dir/build.make
+CMakeFiles/kernel.elf.dir/C.includecache
+CMakeFiles/kernel.elf.dir/cmake_clean.cmake
+CMakeFiles/kernel.elf.dir/depend.internal
+CMakeFiles/kernel.elf.dir/depend.make
+CMakeFiles/kernel.elf.dir/DependInfo.cmake
+CMakeFiles/kernel.elf.dir/flags.make
+CMakeFiles/kernel.elf.dir/link.txt
+CMakeFiles/kernel.elf.dir/progress.make
+CMakeFiles/kernel.elf.dir/chroma/kernel.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/cpu.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/interrupts.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/rw.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/serial.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/drivers/keyboard.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/memory/paging.c.obj
+CMakeFiles/kernel.elf.dir/chroma/system/memory/physmem.c.obj
+CMakeFiles/kernel.elf.dir/chroma/video/draw.c.obj
+CMakeFiles/kernel.elf.dir/chroma/video/print.c.obj
+Makefile
+>>>>>>> master
